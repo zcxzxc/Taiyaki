@@ -273,34 +273,34 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Google.VersionHandler">
-      <HintPath>C:/Taiyaki_Ranch/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
     </Reference>
     <Reference Include="Google.IOSResolver">
-      <HintPath>C:/Taiyaki_Ranch/Assets/ExternalDependencyManager/Editor/1.2.167/Google.IOSResolver.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/ExternalDependencyManager/Editor/1.2.167/Google.IOSResolver.dll</HintPath>
     </Reference>
     <Reference Include="Google.JarResolver">
-      <HintPath>C:/Taiyaki_Ranch/Assets/ExternalDependencyManager/Editor/1.2.167/Google.JarResolver.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/ExternalDependencyManager/Editor/1.2.167/Google.JarResolver.dll</HintPath>
     </Reference>
     <Reference Include="Google.PackageManagerResolver">
-      <HintPath>C:/Taiyaki_Ranch/Assets/ExternalDependencyManager/Editor/1.2.167/Google.PackageManagerResolver.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/ExternalDependencyManager/Editor/1.2.167/Google.PackageManagerResolver.dll</HintPath>
     </Reference>
     <Reference Include="Google.VersionHandlerImpl">
-      <HintPath>C:/Taiyaki_Ranch/Assets/ExternalDependencyManager/Editor/1.2.167/Google.VersionHandlerImpl.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/ExternalDependencyManager/Editor/1.2.167/Google.VersionHandlerImpl.dll</HintPath>
     </Reference>
     <Reference Include="GoogleMobileAds.Common">
-      <HintPath>C:/Taiyaki_Ranch/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll</HintPath>
     </Reference>
     <Reference Include="GoogleMobileAds.Core">
-      <HintPath>C:/Taiyaki_Ranch/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll</HintPath>
     </Reference>
     <Reference Include="GoogleMobileAds">
-      <HintPath>C:/Taiyaki_Ranch/Assets/GoogleMobileAds/GoogleMobileAds.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/GoogleMobileAds/GoogleMobileAds.dll</HintPath>
     </Reference>
     <Reference Include="GoogleMobileAds.Unity">
-      <HintPath>C:/Taiyaki_Ranch/Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Taiyaki_Ranch/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Unity/2019.4.14f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -663,16 +663,16 @@
       <HintPath>C:/Unity/2019.4.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Taiyaki_Ranch/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Taiyaki_Ranch/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>C:/Taiyaki_Ranch/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>C:/Taiyaki_Ranch/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
