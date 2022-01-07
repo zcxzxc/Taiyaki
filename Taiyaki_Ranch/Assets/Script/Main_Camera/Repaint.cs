@@ -6,8 +6,8 @@ public class Repaint : MonoBehaviour
 {
     private Vector3 vec;
     public GameObject obj;
-    private Vector2 Min= new Vector2(-12f,13f); //x 좌표 랜덤 범위
-    private Vector2 Max = new Vector2(-5.7f, 1.2f); //y 좌표 랜덤 범위
+    private Vector2 Min= new Vector2(-5.75f,5.8f); //x 좌표 랜덤 범위
+    private Vector2 Max = new Vector2(-4.7f, 0.9f); //y 좌표 랜덤 범위
     private List<GameObject> list = new List<GameObject>();
 
     private void Start()

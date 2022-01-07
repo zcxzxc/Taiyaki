@@ -26,6 +26,7 @@ public class pop : MonoBehaviour
             return;
         Sc.Identity = identity;
         Sc.change();
+        transform.GetChild(2).transform.localScale = new Vector3(2, 2, 1);
         List<Dictionary<string, object>> data = CSVReader.Read("taiyaki_list");
         name.text = data[identity]["Name"].ToString();
         content.text = data[identity]["Content"].ToString();
@@ -37,9 +38,9 @@ public class pop : MonoBehaviour
     }
     void Update()
     {
-        if(popup && transform.localScale.x < 1)
+        if(popup && transform.localScale.x < 0.7)
         {
-            transform.localScale += new Vector3(0.2f, 0.2f, 0);
+            transform.localScale += new Vector3(0.1f, 0.1f, 0);
         }
     }
 

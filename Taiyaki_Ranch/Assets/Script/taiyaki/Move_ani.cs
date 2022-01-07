@@ -45,14 +45,14 @@ public class Move_ani : MonoBehaviour
     {
 
         transform.position += new Vector3(x, y, 0);
-        if (transform.position.x < -12)
-            transform.position = new Vector3(-11.8f, transform.position.y, transform.position.z);
-        if (transform.position.x > 12)
-            transform.position = new Vector3(11.8f, transform.position.y, transform.position.z);
-        if (transform.position.y < -5.7)
-            transform.position = new Vector3(transform.position.x, -5.5f, transform.position.z);
-        if (transform.position.y > 5.7)
-            transform.position = new Vector3(transform.position.y,5.5f, transform.position.z);
+        if (transform.position.x < -5.75)
+            transform.position = new Vector3(-5.7f, transform.position.y, transform.position.z);
+        if (transform.position.x > 5.8)
+            transform.position = new Vector3(5.3f, transform.position.y, transform.position.z);
+        if (transform.position.y < -4.7)
+            transform.position = new Vector3(transform.position.x, -4.2f, transform.position.z);
+        if (transform.position.y > 0.9)
+            transform.position = new Vector3(transform.position.y,0.4f, transform.position.z);
 
     }
 
