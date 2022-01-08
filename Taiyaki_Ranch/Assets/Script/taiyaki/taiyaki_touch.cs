@@ -13,6 +13,14 @@ public class taiyaki_touch : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        pp.Open_Pop(Sc.Identity);
+        if (gameObject.tag == "enemy")
+        {
+            Camera.main.GetComponent<Enemy_data>().list.Remove(Camera.main.GetComponent<Enemy_data>().list.Find(x => x.gameObject == gameObject));
+            Destroy(gameObject);
+        }
+            
+        
+        else
+            pp.Open_Pop(Sc.Identity);
     }
 }

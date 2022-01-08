@@ -7,6 +7,7 @@ public class Random_move : MonoBehaviour
     private bool walk = false;
     private Move_ani Ma;
     private Sprite_change Sc;
+    IEnumerator run;
     // Start is called before the first frame update
     // Update is called once per frame
 
@@ -17,8 +18,11 @@ public class Random_move : MonoBehaviour
     }
     void Update()
     {
-        if (walk == false)
-            StartCoroutine(walk_start());
+        run = walk_start();
+        if (walk == false && Enemy_data.Be_Battle == false)
+            StartCoroutine(run);
+        if (Enemy_data.Be_Battle == true)
+            StopCoroutine(run);
     }
 
     IEnumerator walk_start()

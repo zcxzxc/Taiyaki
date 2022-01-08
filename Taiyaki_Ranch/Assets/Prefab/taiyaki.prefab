@@ -15,9 +15,12 @@ GameObject:
   - component: {fileID: 9070890856614373867}
   - component: {fileID: -758372655059342908}
   - component: {fileID: 832870490341718032}
-  m_Layer: 0
+  - component: {fileID: -3026232298453439212}
+  - component: {fileID: -2168172438294102343}
+  - component: {fileID: 3001261095479433315}
+  m_Layer: 8
   m_Name: taiyaki
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,6 +119,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 91b9274266d15a84ebfc018496508c2b, type: 3}
   Identity: 0
   list_character: 0
+  Speed: 1
+  health: 1
+  attack: 1
+  attack_cool: 1
 --- !u!114 &9070890856614373867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,3 +160,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a31de0920e7699499dca5e1a2e655e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3026232298453439212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7900533451045404209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da13108062264f0458a3a87478f0eb48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  b_collision: 0
+--- !u!114 &-2168172438294102343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7900533451045404209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ade5dc23fccdce4395d0809d3471709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cool: 0
+--- !u!50 &3001261095479433315
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7900533451045404209}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 999
+  m_AngularDrag: 999
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4

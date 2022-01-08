@@ -10,7 +10,14 @@ public class Move_ani : MonoBehaviour
     void Start()
     {
         Sc = gameObject.GetComponent<Sprite_change>();
-        gameObject.AddComponent<PolygonCollider2D>();
+        gameObject.AddComponent<BoxCollider2D>();
+        
+        if (gameObject.tag == "player")
+        {
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+            //gameObject.GetComponent<BoxCollider2D>().size += new Vector2(2,2);
+        }
+
     }
     float x;
     float y;
@@ -52,7 +59,7 @@ public class Move_ani : MonoBehaviour
         if (transform.position.y < -4.7)
             transform.position = new Vector3(transform.position.x, -4.2f, transform.position.z);
         if (transform.position.y > 0.9)
-            transform.position = new Vector3(transform.position.y,0.4f, transform.position.z);
+            transform.position = new Vector3(transform.position.x,0.4f, transform.position.z);
 
     }
 

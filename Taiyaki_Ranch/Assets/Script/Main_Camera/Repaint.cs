@@ -8,11 +8,11 @@ public class Repaint : MonoBehaviour
     public GameObject obj;
     private Vector2 Min= new Vector2(-5.75f,5.8f); //x 좌표 랜덤 범위
     private Vector2 Max = new Vector2(-4.7f, 0.9f); //y 좌표 랜덤 범위
-    private List<GameObject> list = new List<GameObject>();
+    public List<GameObject> list = new List<GameObject>();
 
     private void Start()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 120;
         Paint();
     }
 
@@ -27,7 +27,7 @@ public class Repaint : MonoBehaviour
     private void Remove()
     {
         for (int i = 0; i < list.Count; i++)
-            list[i].GetComponent<Sprite_change>().Destroy();
+            Destroy(list[i].gameObject);
         list.Clear();
     }
     private void Rendering(int Identity)

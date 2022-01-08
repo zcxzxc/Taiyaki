@@ -8,6 +8,10 @@ public class Sprite_change : MonoBehaviour
     public int Identity;
     private SpriteRenderer SR;
     public bool list_character;
+    public float Speed = 1;
+    public int health = 1;
+    public int attack = 1;
+    public int attack_cool = 1;
     void Awake()
     {
         SR = this.GetComponent<SpriteRenderer>();
@@ -39,10 +43,43 @@ public class Sprite_change : MonoBehaviour
                 transform.localScale = new Vector3(0.5f, 0.5f, 1);
                 break;
         }
+        status_setting();
+    }
+
+    private void status_setting()
+        {
+        List<Dictionary<string, object>> data = CSVReader.Read("taiyaki_list");
+        Speed = (int)data[Identity]["DEX"];
+        attack= (int)data[Identity]["ATK"];
+        attack_cool = (int)data[Identity]["AGI"];
+        health = (int)data[Identity]["CON"];
+    }
+    public void enemy_set()
+    {
+        Destroy(gameObject.GetComponent<Random_move>());
+
     }
 
     public void Destroy()
     {
-        Destroy(gameObject);
+        if (gameObject.tag == "enemy")
+        {
+            Camera.main.GetComponent<Enemy_data>().list.Remove(Camera.main.GetComponent<Enemy_data>().list.Find(x => x.gameObject == gameObject));
+            Destroy(gameObject);
+            if (Camera.main.GetComponent<Enemy_data>().list.Count == 0)
+                Enemy_data.Be_Battle = false;
+        }
+        else 
+        {
+            Camera.main.GetComponent<Repaint>().list.Remove(Camera.main.GetComponent<Repaint>().list.Find(x => x.gameObject == gameObject));
+            Destroy(gameObject);
+        }
+    }
+
+    public void damege(int atk)
+    {
+        health -= atk;
+        if (health <= 0)
+            Destroy();
     }
 }
