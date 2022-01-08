@@ -45,6 +45,12 @@ public class MovetoEnemy : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
+        if (collision.tag == gameObject.tag)
+            return;
+        if (collision.tag == "attack")
+        {
+            return;
+        }
         if (run != null)
             StopCoroutine(run);
         run = cool_down();

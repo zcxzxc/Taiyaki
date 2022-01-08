@@ -5,23 +5,25 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     Sprite_change Sc;
-    MovetoEnemy MtE;
     public int cool = 0;
-    private GameObject obj;
     private Vector3 freeze_position;
+    public GameObject effect;
 
     void Start()
     {
-        Sc = GetComponent<Sprite_change>();
-        MtE = GetComponent<MovetoEnemy>();
+        Sc = transform.parent.GetComponent<Sprite_change>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        freeze_position = transform.position;
+        if (gameObject.layer == collision.gameObject.layer || collision.tag == "attack")
+            return;
+        freeze_position = transform.parent.position;
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        transform.position = freeze_position;
+        if (gameObject.layer == collision.gameObject.layer || collision.tag == "attack")
+            return;
+        transform.parent.position = freeze_position;
         damege(collision.gameObject);
     }
 
@@ -29,19 +31,22 @@ public class Attack : MonoBehaviour
     {
         if (cool > 0)
             return;
+        if (gameObject.layer == target.layer || target == null || transform.tag == target.tag)
+            return;
         cool = Sc.attack_cool;
-        target.GetComponent<Sprite_change>().damege(Sc.attack);
+        target.transform.GetComponent<Sprite_change>().damege(Sc.attack);
+        Instantiate(effect, target.transform.position, Quaternion.identity);
         StartCoroutine(cool_down());
     }
 
 
     IEnumerator cool_down()
     {
-        for(int i=0;i<cool + 2;i++)
+        for(int i=0;i< Sc.attack_cool; i++)
         {
             yield return new WaitForSeconds(1f);
              cool--;
         }
-        
+        cool = 0;
     }
 }

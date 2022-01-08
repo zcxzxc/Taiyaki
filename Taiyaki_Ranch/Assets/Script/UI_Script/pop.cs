@@ -24,7 +24,7 @@ public class pop : MonoBehaviour
     {
         if (popup)
             return;
-        Sc.Identity = identity;
+        Sc.Identity = identity; 
         Sc.change();
         transform.GetChild(2).transform.localScale = new Vector3(2, 2, 1);
         List<Dictionary<string, object>> data = CSVReader.Read("taiyaki_list");

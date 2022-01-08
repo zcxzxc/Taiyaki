@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 101
+  controlID: 139
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,7 +93,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 292
-    height: 449
+    height: 447
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
@@ -117,9 +117,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 449
+    y: 447
     width: 1135
-    height: 274
+    height: 276
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 14}
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 102
+  controlID: 28
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,11 +240,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1135
-    height: 449
+    height: 447
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 48
+  controlID: 29
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -263,7 +263,7 @@ MonoBehaviour:
     x: 292
     y: 0
     width: 843
-    height: 449
+    height: 447
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
@@ -294,9 +294,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 522.4
+    y: 520
     width: 1134
-    height: 253
+    height: 255
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
@@ -322,7 +322,7 @@ MonoBehaviour:
     x: 292
     y: 73.6
     width: 841
-    height: 428
+    height: 426
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -369,22 +369,22 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 841
-      height: 407
-    m_Scale: {x: 0.4710648, y: 0.4710648}
-    m_Translation: {x: 420.5, y: 203.5}
+      height: 405
+    m_Scale: {x: 0.46875, y: 0.46875}
+    m_Translation: {x: 420.5, y: 202.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -892.6585
+      x: -897.06665
       y: -432
-      width: 1785.317
+      width: 1794.1333
       height: 864
     m_MinimalGUI: 1
-  m_defaultScale: 0.4710648
-  m_LastWindowPixelSize: {x: 1051.25, y: 535}
+  m_defaultScale: 0.46875
+  m_LastWindowPixelSize: {x: 1051.25, y: 532.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -412,9 +412,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 522.4
+    y: 520
     width: 1134
-    height: 253
+    height: 255
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -429,20 +429,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefab
+    - Assets/Sprite/Taiyaki
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefab
+  - Assets/Sprite/Taiyaki
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Taiyaki_git\Taiyaki_Ranch
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 155}
-    m_SelectedIDs: c63c0000
-    m_LastClickedID: 15558
-    m_ExpandedIDs: 00000000ae3c0000b03c0000b23c0000b43c0000b63c000000ca9a3b
+    scrollPos: {x: 0, y: 153}
+    m_SelectedIDs: da3c0000
+    m_LastClickedID: 15578
+    m_ExpandedIDs: 00000000b63c0000b83c0000ba3c0000bc3c0000be3c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -470,7 +470,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ae3c0000b03c0000b23c0000b43c0000b63c0000
+    m_ExpandedIDs: 00000000b63c0000b83c0000ba3c0000bc3c0000be3c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -514,7 +514,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 3}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -563,7 +563,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 222
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -588,28 +588,28 @@ MonoBehaviour:
     x: 0
     y: 73.6
     width: 291
-    height: 428
+    height: 426
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 6407ffff7c07ffff6a08ffff46fbffff
+      m_SelectedIDs: 589f0000
+      m_LastClickedID: 40792
+      m_ExpandedIDs: f256feff0a57fefff857feff1685feffb288feff0490feff2490feffeed2feffa6e3feff1cf1feffb6f4feff2cfafeff4cfafeff6efdfeffda12ffff3a13ffff5a13ffff7a13ffffa014ffff9c17ffff4e19fffffe1affff3427ffff2c29ffffec36ffffd28bffffd48cffff6690ffff8290ffff9e90ffff3494ffff7094ffffac94ffffcae6ffff2ae9ffff46fbffff623b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: taiyaki
+        m_OriginalName: taiyaki
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -2710
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -643,7 +643,7 @@ MonoBehaviour:
     x: 292
     y: 73.6
     width: 841
-    height: 428
+    height: 426
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: d446dfcc62b90864c8a15278a83ab159
@@ -655,9 +655,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.9514214, y: -1.1448456, z: -6.112543}
+    m_Target: {x: 0, y: 0, z: -10}
     speed: 2
-    m_Value: {x: 0.9514214, y: -1.1448456, z: -6.112543}
+    m_Value: {x: 0.000014378814, y: 0.0000143674415, z: -9.999998}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -687,10 +687,10 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
         m_Target: 1
@@ -707,9 +707,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.152796
+    m_Target: 10
     speed: 2
-    m_Value: 5.152796
+    m_Value: 9.999996
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -727,7 +727,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.16023885, y: 0.24504389, z: 0.04110361, w: -0.9552972}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 

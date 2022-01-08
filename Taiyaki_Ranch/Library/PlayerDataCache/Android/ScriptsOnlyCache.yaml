@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Attack
     - Defend_button
+    - Effect
     - Enemy_data
     - Fps_check
     - Idle_ani
@@ -27,8 +28,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Mobile.AndroidLogcat.Editor.dll:
     - Unity.Android.Logcat.AndroidLogcatManager
-    Unity.Notifications.dll:
-    - Unity.Notifications.UnityNotificationEditorManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -75,49 +74,51 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11514}
     - Class: 114
-      Script: {instanceID: 11826}
+      Script: {instanceID: 11828}
     - Class: 114
-      Script: {instanceID: 12026}
+      Script: {instanceID: 12028}
     - Class: 114
-      Script: {instanceID: 12526}
+      Script: {instanceID: 12528}
     - Class: 114
-      Script: {instanceID: 12582}
+      Script: {instanceID: 12584}
     - Class: 114
-      Script: {instanceID: 12830}
+      Script: {instanceID: 12832}
     - Class: 114
-      Script: {instanceID: 13028}
+      Script: {instanceID: 13030}
     - Class: 114
-      Script: {instanceID: 13222}
+      Script: {instanceID: 13224}
     - Class: 114
-      Script: {instanceID: 13392}
+      Script: {instanceID: 13394}
     - Class: 114
-      Script: {instanceID: 13434}
+      Script: {instanceID: 13436}
     - Class: 114
-      Script: {instanceID: 13674}
+      Script: {instanceID: 13676}
     - Class: 114
-      Script: {instanceID: 13692}
+      Script: {instanceID: 13694}
     - Class: 114
-      Script: {instanceID: 13736}
+      Script: {instanceID: 13738}
     - Class: 114
-      Script: {instanceID: 13742}
+      Script: {instanceID: 13744}
     - Class: 114
-      Script: {instanceID: 13858}
+      Script: {instanceID: 13860}
     - Class: 114
-      Script: {instanceID: 14022}
+      Script: {instanceID: 14024}
     - Class: 114
-      Script: {instanceID: 14142}
+      Script: {instanceID: 14144}
     - Class: 114
-      Script: {instanceID: 14448}
+      Script: {instanceID: 14156}
     - Class: 114
-      Script: {instanceID: 14458}
+      Script: {instanceID: 14452}
     - Class: 114
-      Script: {instanceID: 14632}
+      Script: {instanceID: 14462}
     - Class: 114
-      Script: {instanceID: 14838}
+      Script: {instanceID: 14636}
     - Class: 114
-      Script: {instanceID: 15718}
+      Script: {instanceID: 14842}
+    - Class: 114
+      Script: {instanceID: 24190}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -295,7 +296,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: bc257b1df2c0ae29f6ddf999f88b177c
+      Hash: 1bb399b87be636c9f91324c9e3909a5f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Attack
@@ -614,6 +615,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Fps_check
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: GoogleMobileAds.Common.dll
     namespaceName: GoogleMobileAds.Common
     className: MobileAdsEventExecutor
@@ -760,7 +767,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Fps_check
+    className: Effect
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

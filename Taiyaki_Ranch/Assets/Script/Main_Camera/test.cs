@@ -20,8 +20,8 @@ public class test : MonoBehaviour
         {
             for (int i = 0; i < Data_base.Taiyaki.Length; i++)
                 Data_base.Taiyaki[i] = 0;
-            for (int i = 0; i < 6; i++)
-                Data_base.Taiyaki[i] = Random.Range(0, 100);
+           for(int i=0;i<6;i++)
+            Data_base.Taiyaki[i] = 1;
 
                 Camera.main.GetComponent<Repaint>().Paint();
             //tb.text_open(2, 6);

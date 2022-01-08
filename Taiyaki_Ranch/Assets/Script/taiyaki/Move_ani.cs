@@ -10,13 +10,6 @@ public class Move_ani : MonoBehaviour
     void Start()
     {
         Sc = gameObject.GetComponent<Sprite_change>();
-        gameObject.AddComponent<BoxCollider2D>();
-        
-        if (gameObject.tag == "player")
-        {
-            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
-            //gameObject.GetComponent<BoxCollider2D>().size += new Vector2(2,2);
-        }
 
     }
     float x;

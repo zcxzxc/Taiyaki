@@ -70,6 +70,7 @@
     <Compile Include="Assets\Script\Main_Camera\Repaint.cs" />
     <Compile Include="Assets\Script\Main_Camera\test.cs" />
     <Compile Include="Assets\Script\UI_Script\Defend_button.cs" />
+    <Compile Include="Assets\Script\UI_Script\Effect.cs" />
     <Compile Include="Assets\Script\UI_Script\Fps_check.cs" />
     <Compile Include="Assets\Script\UI_Script\pop.cs" />
     <Compile Include="Assets\Script\UI_Script\text_box.cs" />

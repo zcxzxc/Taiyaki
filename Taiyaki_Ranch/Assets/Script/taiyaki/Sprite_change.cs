@@ -48,11 +48,16 @@ public class Sprite_change : MonoBehaviour
 
     private void status_setting()
         {
+        gameObject.AddComponent<BoxCollider2D>();
+        if (gameObject.tag == "player")
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
         List<Dictionary<string, object>> data = CSVReader.Read("taiyaki_list");
         Speed = (int)data[Identity]["DEX"];
         attack= (int)data[Identity]["ATK"];
         attack_cool = (int)data[Identity]["AGI"];
         health = (int)data[Identity]["CON"];
+        transform.GetChild(0).GetComponent<BoxCollider2D>().size += new Vector2((int)data[Identity]["Range"], (int)data[Identity]["Range"]);
+        
     }
     public void enemy_set()
     {
