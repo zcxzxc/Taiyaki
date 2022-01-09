@@ -36,5 +36,6 @@ public class Repaint : MonoBehaviour
         list.Add(Instantiate(obj, vec, Quaternion.identity));
         list[list.Count -1].GetComponent<Sprite_change>().Identity = Identity;
         list[list.Count - 1].GetComponent<Sprite_change>().change();
+        list[list.Count - 1].GetComponent<Sprite_change>().status_setting();
     }
 }

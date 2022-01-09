@@ -528,6 +528,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 4af3d91481fa046318e97dbeecf8584b,
         type: 3}
+    - target: {fileID: 3125242324397861202, guid: 387d88564955ced4abdb5553128380c8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3603490199979788673, guid: 387d88564955ced4abdb5553128380c8,
         type: 3}
       propertyPath: m_SortingOrder
@@ -648,6 +653,9 @@ PrefabInstance:
     - {fileID: 3603490199979788672, guid: 387d88564955ced4abdb5553128380c8, type: 3}
     - {fileID: 8503044030282805165, guid: 387d88564955ced4abdb5553128380c8, type: 3}
     - {fileID: 5542995639190890522, guid: 387d88564955ced4abdb5553128380c8, type: 3}
+    - {fileID: 1415099650707068915, guid: 387d88564955ced4abdb5553128380c8, type: 3}
+    - {fileID: 5446089873904197499, guid: 387d88564955ced4abdb5553128380c8, type: 3}
+    - {fileID: 7782649040081358995, guid: 387d88564955ced4abdb5553128380c8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 387d88564955ced4abdb5553128380c8, type: 3}
 --- !u!4 &646279651 stripped
 Transform:

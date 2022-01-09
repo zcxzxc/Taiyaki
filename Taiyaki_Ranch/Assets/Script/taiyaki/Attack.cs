@@ -8,6 +8,8 @@ public class Attack : MonoBehaviour
     public int cool = 0;
     private Vector3 freeze_position;
     public GameObject effect;
+    public List<GameObject> list = new List<GameObject>();
+    private int t = 0;
 
     void Start()
     {
@@ -17,35 +19,58 @@ public class Attack : MonoBehaviour
     {
         if (gameObject.layer == collision.gameObject.layer || collision.tag == "attack")
             return;
-        freeze_position = transform.parent.position;
+        if (list != null&&list.FindIndex(x => x.gameObject == collision.gameObject) == -1)
+            list.Add(collision.gameObject);
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
+        if (cool > 0)
+            return;
         if (gameObject.layer == collision.gameObject.layer || collision.tag == "attack")
             return;
-        transform.parent.position = freeze_position;
-        damege(collision.gameObject);
+        //transform.parent.position = freeze_position;
+
+        //damege(collision.gameObject);
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        list.Remove(list.Find(x => x.gameObject == collision.gameObject));
+    }
+
+    private void Update()
+    {
+        if(cool <= 0 && list.Count > 0)
+        {
+            for (int i = 0; i < (Sc.multiple ? list.Count : 1); i++)
+            {
+               /* if(list[i].gameObject == null)
+                    list.Remove(list.Find(x => x.gameObject == list[i].gameObject));
+                else */
+                     damege(list[i]);
+            }
+            cool = Sc.attack_cool;
+            StartCoroutine(cool_down());
+
+        }
+
     }
 
     private void damege(GameObject target)
     {
-        if (cool > 0)
-            return;
         if (gameObject.layer == target.layer || target == null || transform.tag == target.tag)
             return;
-        cool = Sc.attack_cool;
         target.transform.GetComponent<Sprite_change>().damege(Sc.attack);
         Instantiate(effect, target.transform.position, Quaternion.identity);
-        StartCoroutine(cool_down());
     }
 
 
     IEnumerator cool_down()
     {
-        for(int i=0;i< Sc.attack_cool; i++)
+        for (int i = 0; i < Sc.attack_cool; i++)
         {
             yield return new WaitForSeconds(1f);
-             cool--;
+            cool--;
         }
         cool = 0;
     }

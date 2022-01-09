@@ -22,5 +22,6 @@ public class Enemy_data : MonoBehaviour
         list[list.Count - 1].layer = 9;
         list[list.Count - 1].transform.GetChild(0).gameObject.layer = 9;
         list[list.Count - 1].GetComponent<Sprite_change>().change();
+        list[list.Count - 1].GetComponent<Sprite_change>().status_setting();
     }
 }

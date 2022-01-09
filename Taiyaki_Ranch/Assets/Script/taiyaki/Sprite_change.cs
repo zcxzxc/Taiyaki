@@ -12,6 +12,7 @@ public class Sprite_change : MonoBehaviour
     public int health = 1;
     public int attack = 1;
     public int attack_cool = 1;
+    public bool multiple = false;
     void Awake()
     {
         SR = this.GetComponent<SpriteRenderer>();
@@ -43,20 +44,24 @@ public class Sprite_change : MonoBehaviour
                 transform.localScale = new Vector3(0.5f, 0.5f, 1);
                 break;
         }
-        status_setting();
+        
     }
 
-    private void status_setting()
+   public void status_setting()
         {
         gameObject.AddComponent<BoxCollider2D>();
         if (gameObject.tag == "player")
             gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+        if (gameObject.tag == "enemy")
+            Destroy(GetComponent<taiyaki_touch>());
         List<Dictionary<string, object>> data = CSVReader.Read("taiyaki_list");
         Speed = (int)data[Identity]["DEX"];
         attack= (int)data[Identity]["ATK"];
         attack_cool = (int)data[Identity]["AGI"];
         health = (int)data[Identity]["CON"];
-        transform.GetChild(0).GetComponent<BoxCollider2D>().size += new Vector2((int)data[Identity]["Range"], (int)data[Identity]["Range"]);
+        if ((int)data[Identity]["Multiple"] == 1)
+            multiple = true;
+        transform.GetChild(0).GetComponent<CircleCollider2D>().radius += (int)data[Identity]["Range"];
         
     }
     public void enemy_set()
