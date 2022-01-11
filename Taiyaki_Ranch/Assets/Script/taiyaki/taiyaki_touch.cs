@@ -6,6 +6,7 @@ public class taiyaki_touch : MonoBehaviour
 {
     private pop pp;
     Sprite_change Sc;
+    
     private void Start()
     {
         Sc = gameObject.GetComponent<Sprite_change>();

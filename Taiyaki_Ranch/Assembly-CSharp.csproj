@@ -56,10 +56,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\CSVReader.cs" />
+     <Compile Include="Assets\Script\GameManager.cs" />
      <Compile Include="Assets\Script\Main_Camera\Ads.cs" />
      <Compile Include="Assets\Script\Main_Camera\Data_base.cs" />
      <Compile Include="Assets\Script\Main_Camera\Repaint.cs" />
-     <Compile Include="Assets\Script\Main_Camera\test.cs" />
+     <Compile Include="Assets\Script\UI_Script\CanvasManager.cs" />
      <Compile Include="Assets\Script\UI_Script\pop.cs" />
      <Compile Include="Assets\Script\UI_Script\text_box.cs" />
      <Compile Include="Assets\Script\taiyaki\Idle_ani.cs" />

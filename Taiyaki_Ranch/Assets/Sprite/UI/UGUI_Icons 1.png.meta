@@ -1,0 +1,353 @@
+fileFormatVersion: 2
+guid: 4b2e8e058aa2448cba986bda5374c09e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7181973103274296969
+    second: UGUI_Icons 1_0
+  - first:
+      213: -7418167154727280729
+    second: UGUI_Icons 1_1
+  - first:
+      213: -4251115351015083392
+    second: UGUI_Icons 1_2
+  - first:
+      213: -3319797011558992594
+    second: UGUI_Icons 1_3
+  - first:
+      213: 6453570077880453984
+    second: UGUI_Icons 1_4
+  - first:
+      213: 6511614704888815401
+    second: UGUI_Icons 1_5
+  - first:
+      213: -678718120548206129
+    second: UGUI_Icons 1_6
+  - first:
+      213: 4400093646633998026
+    second: UGUI_Icons 1_7
+  - first:
+      213: -120949888906817248
+    second: UGUI_Icons 1_8
+  - first:
+      213: 135912087514086978
+    second: UGUI_Icons 1_9
+  - first:
+      213: 1049491189090574690
+    second: UGUI_Icons 1_10
+  - first:
+      213: 6934148945875980035
+    second: UGUI_Icons 1_11
+  - first:
+      213: 529797650769021595
+    second: UGUI_Icons 1_12
+  - first:
+      213: 7982710075022612049
+    second: UGUI_Icons 1_13
+  - first:
+      213: -9115190203237653960
+    second: UGUI_Icons 1_14
+  - first:
+      213: -7449416917315000251
+    second: UGUI_Icons 1_15
+  - first:
+      213: 3104356424585580450
+    second: UGUI_Icons 1_16
+  - first:
+      213: -4299534333856347840
+    second: UGUI_Icons 1_17
+  - first:
+      213: 2349324852689608693
+    second: UGUI_Icons 1_18
+  - first:
+      213: -7306589695785006089
+    second: UGUI_Icons 1_19
+  - first:
+      213: -8272040099307374604
+    second: UGUI_Icons 1_20
+  - first:
+      213: 431255518765384184
+    second: UGUI_Icons 1_21
+  - first:
+      213: 1395499268782271885
+    second: UGUI_Icons 1_22
+  - first:
+      213: 2043524092472950500
+    second: UGUI_Icons 1_23
+  - first:
+      213: 3877117729507997564
+    second: UGUI_Icons 1_24
+  - first:
+      213: 5388281731645937041
+    second: UGUI_Icons 1_25
+  - first:
+      213: -7311028210546227648
+    second: UGUI_Icons 1_26
+  - first:
+      213: -5423670729344032731
+    second: UGUI_Icons 1_27
+  - first:
+      213: -3357410981563135924
+    second: UGUI_Icons 1_28
+  - first:
+      213: 7470626439174973257
+    second: UGUI_Icons 1_29
+  - first:
+      213: -4773473389057056470
+    second: UGUI_Icons 1_30
+  - first:
+      213: -5035927328445610628
+    second: UGUI_Icons 1_31
+  - first:
+      213: 3416824209294028890
+    second: UGUI_Icons 1_32
+  - first:
+      213: -2883160898179022654
+    second: UGUI_Icons 1_33
+  - first:
+      213: -3798387875763466534
+    second: UGUI_Icons 1_34
+  - first:
+      213: -7496577869368632214
+    second: UGUI_Icons 1_35
+  - first:
+      213: -5866313619343277045
+    second: UGUI_Icons 1_36
+  - first:
+      213: 9139625840312554319
+    second: UGUI_Icons 1_37
+  - first:
+      213: 3766700295095339390
+    second: UGUI_Icons 1_38
+  - first:
+      213: -7655265199001646823
+    second: UGUI_Icons 1_39
+  - first:
+      213: 6031586265219985143
+    second: UGUI_Icons 1_40
+  - first:
+      213: 7318823784636574241
+    second: UGUI_Icons 1_41
+  - first:
+      213: 3377598153593778646
+    second: UGUI_Icons 1_42
+  - first:
+      213: -1205536068027072115
+    second: UGUI_Icons 1_43
+  - first:
+      213: -4359590879518980062
+    second: UGUI_Icons 1_44
+  - first:
+      213: 466667261828131305
+    second: UGUI_Icons 1_45
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UGUI_Icons 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98603175c7e7ba360800000000000000
+      internalID: 7181973103274296969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UGUI_Icons 1_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af9202a6406d0990800000000000000
+      internalID: -7418167154727280729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UGUI_Icons 1_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08239839c110105c0800000000000000
+      internalID: -4251115351015083392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
