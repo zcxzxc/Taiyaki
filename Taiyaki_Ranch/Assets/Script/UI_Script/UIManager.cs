@@ -51,7 +51,7 @@ public class UIManager : MonoBehaviour
 
     public void Defend_OnMouseDown()
     {
-        if(Enemy_data.Be_Battle = false)
+        if(Enemy_data.Be_Battle == false)
         {
             Enemy_data.Be_Battle = true;
             for(int i=0; i<5; i++)
