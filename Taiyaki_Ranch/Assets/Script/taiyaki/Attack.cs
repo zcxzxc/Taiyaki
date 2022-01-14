@@ -5,50 +5,35 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     Sprite_change Sc;
-    public int cool = 0;
-    private Vector3 freeze_position;
-    public GameObject effect;
-    public List<GameObject> list = new List<GameObject>();
+    public int cool = 0; //붕어방 개개인의 현재 공격 쿨타임
+    public GameObject effect; //공격 시 소환될 prefab
+    public List<GameObject> list = new List<GameObject>(); //공격 판정 내에 있는 붕어빵들을 담을 변수
     private int t = 0;
 
     void Start()
     {
         Sc = transform.parent.GetComponent<Sprite_change>();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) //공격 콜라이더 내에 적 붕어빵이 들어올 경우 리스트에 담음 (1번만)
     {
         if (gameObject.layer == collision.gameObject.layer || collision.tag == "attack")
             return;
         if (list != null&&list.FindIndex(x => x.gameObject == collision.gameObject) == -1)
             list.Add(collision.gameObject);
     }
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (cool > 0)
-            return;
-        if (gameObject.layer == collision.gameObject.layer || collision.tag == "attack")
-            return;
-        //transform.parent.position = freeze_position;
 
-        //damege(collision.gameObject);
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision) // 위 리스트에 담겼던 적 붕어빵이 나갈경우 리스트에서 삭제함
     {
         list.Remove(list.Find(x => x.gameObject == collision.gameObject));
     }
 
-    private void Update()
+    private void Update() //공격 쿨타임이 0일경우 & 콜라이더 내에 적이 있을경우 공격
     {
         if(cool <= 0 && list.Count > 0)
         {
             for (int i = 0; i < (Sc.multiple ? list.Count : 1); i++)
-            {
-               /* if(list[i].gameObject == null)
-                    list.Remove(list.Find(x => x.gameObject == list[i].gameObject));
-                else */
                      damege(list[i]);
-            }
+
             cool = Sc.attack_cool;
             StartCoroutine(cool_down());
 
@@ -56,7 +41,7 @@ public class Attack : MonoBehaviour
 
     }
 
-    private void damege(GameObject target)
+    private void damege(GameObject target) //리스트에 담긴 적 붕어빵을 공격함
     {
         if (gameObject.layer == target.layer || target == null || transform.tag == target.tag)
             return;
@@ -65,7 +50,7 @@ public class Attack : MonoBehaviour
     }
 
 
-    IEnumerator cool_down()
+    IEnumerator cool_down() //1초마다 쿨타임 1씩 감소
     {
         for (int i = 0; i < Sc.attack_cool; i++)
         {

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Load_Size_Up : MonoBehaviour
 {
-    public GameObject TitlePage_BackGround;
     private Image TitlePage_BackGroundImage;
 
     public GameObject InGameHUD_Top;
@@ -16,7 +15,8 @@ public class Load_Size_Up : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TitlePage_BackGroundImage = TitlePage_BackGround.GetComponent<Image>();
+        TitlePage_BackGroundImage = transform.GetChild(1).GetComponent<Image>();
+        TitlePage_BackGroundImage.color = new Color(0, 0, 0, 200/255f);
         Camera.main.orthographicSize = 3.3f;
         StartCoroutine(Size_Up());
     }
@@ -31,7 +31,7 @@ public class Load_Size_Up : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
         Camera.main.orthographicSize = 5.4f;
-        TitlePage_BackGround.SetActive(false);
+        Destroy(transform.GetChild(1).gameObject);
         Destroy(GetComponent<Load_Size_Up>());
     }
 }

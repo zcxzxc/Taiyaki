@@ -5,8 +5,8 @@ using UnityEngine;
 public class MovetoEnemy : MonoBehaviour
 {
     Enemy_data Ed;
-    private int index;
-    public bool b_collision = false;
+    private int index; //가장 가까운 적 붕어빵의 list 인덱스
+    public bool b_collision = false; //공격 판정 내에 적이 들어오면 다가가지 않음
     Sprite_change Sc;
     Repaint Db;
     IEnumerator run;
@@ -17,7 +17,7 @@ public class MovetoEnemy : MonoBehaviour
         if (transform.parent.gameObject.tag == "enemy")
             Db = Camera.main.GetComponent<Repaint>();
     }
-    public void search_shortest_enemy()
+    public void search_shortest_enemy() //가장 가까운 적을 list 서치를 통해 확인
     {
         float distant = 99999;
         index = 0;
@@ -45,7 +45,7 @@ public class MovetoEnemy : MonoBehaviour
         }
 
     }
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision) //적이 공격판정 내에 있을경우 b_collision을 true함
     {
         if (collision.tag == gameObject.tag)
             return;

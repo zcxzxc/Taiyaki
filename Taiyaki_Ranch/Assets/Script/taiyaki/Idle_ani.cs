@@ -5,7 +5,7 @@ using UnityEngine;
 public class Idle_ani : MonoBehaviour
 {
     Sprite_change Sc;
-    public int idle_num;
+    public int idle_num; //스탠딩 모션 번호를 csv에서 끌어옴
     void Start()
     {
         Sc = gameObject.GetComponent<Sprite_change>();

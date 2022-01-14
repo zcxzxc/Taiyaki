@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Random_move : MonoBehaviour
 {
-    private bool walk = false;
+    private bool walk = false; //이동중인가를 판단할 bool
     private Move_ani Ma;
     private Sprite_change Sc;
     IEnumerator run;

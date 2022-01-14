@@ -5,21 +5,21 @@ using UnityEngine;
 public class Sprite_change : MonoBehaviour
 {
     public Sprite[] sprites;
-    public int Identity;
+    public int Identity; //붕어빵의 개체값
     private SpriteRenderer SR;
     public bool list_character;
-    public float Speed = 1;
-    public int health = 1;
-    public int attack = 1;
-    public int attack_cool = 1;
-    public bool multiple = false;
+    public float Speed = 1; //적에게 다가갈때 이동속도
+    public int health = 1; //체력
+    public int attack = 1; //공격력
+    public int attack_cool = 1; //공격 속도
+    public bool multiple = false; //다중공격 여부
     void Awake()
     {
         SR = this.GetComponent<SpriteRenderer>();
         //change();
     }
 
-    public void change()
+    public void change() //개체값을 전달받아서 스프라이트 이미지를 바꿈
     {
         SR.sprite = sprites[0];
         SR.color = new Color(1, 1, 1);
@@ -47,7 +47,7 @@ public class Sprite_change : MonoBehaviour
         
     }
 
-   public void status_setting()
+   public void status_setting() //개체값에 따라 csv에 적혀있는 스텟을 끌어옴
         {
         gameObject.AddComponent<BoxCollider2D>();
         if (gameObject.tag == "player")
@@ -64,13 +64,13 @@ public class Sprite_change : MonoBehaviour
         transform.GetChild(0).GetComponent<CircleCollider2D>().radius += (int)data[Identity]["Range"];
         
     }
-    public void enemy_set()
+    public void enemy_set() //적은 랜덤으로 움직이지 않고 다가가기만 함
     {
         Destroy(gameObject.GetComponent<Random_move>());
 
     }
 
-    public void Destroy()
+    public void Destroy() //체력이 0이 되거나 필요로 의해 붕어빵 오브젝트를 지워야 할때, 리스트에서 삭제 후 오브젝트를 삭제함
     {
         if (gameObject.tag == "enemy")
         {
