@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class test : MonoBehaviour
 {
-    public bool It_is_taiyaki;
     public GameObject t_obj;
     text_box tb;
 
@@ -16,17 +15,12 @@ public class test : MonoBehaviour
     Vector3 vec;
     private void OnMouseDown()
     {
-        if (It_is_taiyaki == false)
-        {
             for (int i = 0; i < Data_base.Taiyaki.Length; i++)
                 Data_base.Taiyaki[i] = 0;
             for(int i=0;i<6;i++)
                 Data_base.Taiyaki[i] = 1;
 
                 Camera.main.GetComponent<Repaint>().Paint();
-            //tb.text_open(2, 6);
-        }
-        else
-            Destroy(gameObject);
+        Camera.main.GetComponent<Save_Load_Base>().Save();
     }
 }

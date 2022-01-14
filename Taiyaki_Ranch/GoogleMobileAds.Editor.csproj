@@ -299,6 +299,9 @@
     <Reference Include="GoogleMobileAds.Unity">
       <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll</HintPath>
     </Reference>
+    <Reference Include="LitJson">
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/Plugins/LitJson.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>

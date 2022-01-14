@@ -69,6 +69,7 @@
     <Compile Include="Assets\Script\Main_Camera\Enemy_data.cs" />
     <Compile Include="Assets\Script\Main_Camera\Load_Size_Up.cs" />
     <Compile Include="Assets\Script\Main_Camera\Repaint.cs" />
+    <Compile Include="Assets\Script\Main_Camera\Save_Load_Base.cs" />
     <Compile Include="Assets\Script\Main_Camera\test.cs" />
     <Compile Include="Assets\Script\UI_Script\Defend_button.cs" />
     <Compile Include="Assets\Script\UI_Script\Effect.cs" />
@@ -295,6 +296,9 @@
     </Reference>
     <Reference Include="GoogleMobileAds.Unity">
       <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>C:/Taiyaki_git/Taiyaki_Ranch/Assets/Plugins/LitJson.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Unity/2019.4.14f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

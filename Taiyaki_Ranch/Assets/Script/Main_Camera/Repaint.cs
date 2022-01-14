@@ -13,6 +13,7 @@ public class Repaint : MonoBehaviour
     private void Start()
     {
         Application.targetFrameRate = 120;
+        transform.GetComponent<Save_Load_Base>().Load();
         Paint();
     }
 
