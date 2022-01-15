@@ -22,6 +22,7 @@ public class Load_Size_Up : MonoBehaviour
     {
         if(Cloud_Right != null && Cloud_Left != null)
         {
+            Cloud_Left.SetActive(true);Cloud_Right.SetActive(true);
             rectTransform_left = Cloud_Left.GetComponent<RectTransform>();
             rectTransform_right = Cloud_Right.GetComponent<RectTransform>();
         }
