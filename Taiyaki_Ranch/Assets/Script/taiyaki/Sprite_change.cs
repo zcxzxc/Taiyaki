@@ -21,29 +21,10 @@ public class Sprite_change : MonoBehaviour
 
     public void change() //개체값을 전달받아서 스프라이트 이미지를 바꿈
     {
-        SR.sprite = sprites[0];
+        SR.sprite = sprites[Identity];
         SR.color = new Color(1, 1, 1);
         transform.localScale = new Vector3(1, 1, 1);
-        switch (Identity)
-        {
-            case 0: //노멀
-                break;
-            case 1: //김치
-                SR.color = new Color(1,103/255,103/255);
-                break;
-            case 2: //여물
-                SR.color = new Color(0,1,0);
-                break;
-            case 3: //붕노
-                SR.sprite = sprites[1];
-                break;
-            case 4: //빙빙
-                break;
-            case 5: //달고나
-                SR.sprite = sprites[2];
-                transform.localScale = new Vector3(0.5f, 0.5f, 1);
-                break;
-        }
+        
         
     }
 

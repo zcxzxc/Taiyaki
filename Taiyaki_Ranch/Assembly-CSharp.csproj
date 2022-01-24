@@ -75,7 +75,9 @@
     <Compile Include="Assets\Script\UI_Script\Defend_button.cs" />
     <Compile Include="Assets\Script\UI_Script\Effect.cs" />
     <Compile Include="Assets\Script\UI_Script\Fps_check.cs" />
+    <Compile Include="Assets\Script\UI_Script\Member_Image_Change.cs" />
     <Compile Include="Assets\Script\UI_Script\Scene_Manager.cs" />
+    <Compile Include="Assets\Script\UI_Script\Taiyaki_Manage.cs" />
     <Compile Include="Assets\Script\UI_Script\UIManager.cs" />
     <Compile Include="Assets\Script\UI_Script\pop.cs" />
     <Compile Include="Assets\Script\UI_Script\text_box.cs" />

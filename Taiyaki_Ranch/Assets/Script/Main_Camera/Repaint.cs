@@ -20,9 +20,9 @@ public class Repaint : MonoBehaviour
     public void Paint() //리스트에 있는 붕어빵을 확인
     {
         Remove();
-        for (int i=0;i<Data_base.Taiyaki.Length;i++)
-            if (Data_base.Taiyaki[i] > 0)
-                Rendering(i);
+        for (int i=0;i<Data_base.Battle_Member.Length;i++)
+            if (Data_base.Battle_Member[i] >= 0)
+                Rendering(Data_base.Battle_Member[i]);
     }
 
     private void Remove() //필드에 있는 모든 붕어빵 삭제
