@@ -45,6 +45,7 @@ public class Move_ani : MonoBehaviour
     {
 
         transform.position += new Vector3(x, y, 0);
+        /*
         if (transform.position.x < -5.75)
             transform.position = new Vector3(-5.7f, transform.position.y, transform.position.z);
         if (transform.position.x > 5.8)
@@ -53,7 +54,7 @@ public class Move_ani : MonoBehaviour
             transform.position = new Vector3(transform.position.x, -4.2f, transform.position.z);
         if (transform.position.y > 0.9)
             transform.position = new Vector3(transform.position.x,0.4f, transform.position.z);
-
+        */
     }
 
 

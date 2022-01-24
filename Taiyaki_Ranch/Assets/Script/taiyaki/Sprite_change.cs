@@ -50,10 +50,11 @@ public class Sprite_change : MonoBehaviour
    public void status_setting() //개체값에 따라 csv에 적혀있는 스텟을 끌어옴
         {
         gameObject.AddComponent<BoxCollider2D>();
-        if (gameObject.tag == "player")
-            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
         if (gameObject.tag == "enemy")
+        {
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
             Destroy(GetComponent<taiyaki_touch>());
+        }
         List<Dictionary<string, object>> data = CSVReader.Read("taiyaki_list");
         Speed = (int)data[Identity]["DEX"];
         attack= (int)data[Identity]["ATK"];
