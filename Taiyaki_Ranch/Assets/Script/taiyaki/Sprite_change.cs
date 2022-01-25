@@ -13,6 +13,7 @@ public class Sprite_change : MonoBehaviour
     public int attack = 1; //공격력
     public int attack_cool = 1; //공격 속도
     public bool multiple = false; //다중공격 여부
+    public int Member_Slot;
     void Awake()
     {
         SR = this.GetComponent<SpriteRenderer>();
@@ -59,10 +60,18 @@ public class Sprite_change : MonoBehaviour
             Camera.main.GetComponent<Enemy_data>().list.Remove(Camera.main.GetComponent<Enemy_data>().list.Find(x => x.gameObject == gameObject));
             Destroy(gameObject);
             if (Camera.main.GetComponent<Enemy_data>().list.Count == 0)
+            {
+                Camera.main.GetComponent<Repaint>().Paint();
                 Enemy_data.Be_Battle = false;
+            }
         }
         else 
         {
+            if (Data_base.Taiyaki[Identity] > 1 && Identity != 0)
+                Data_base.Taiyaki[Identity]--;
+            else if (Data_base.Taiyaki[Identity] <= 1 && Identity != 0)
+                Data_base.Battle_Member[Member_Slot] = -1;
+
             Camera.main.GetComponent<Repaint>().list.Remove(Camera.main.GetComponent<Repaint>().list.Find(x => x.gameObject == gameObject));
             Destroy(gameObject);
         }
