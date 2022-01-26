@@ -8,6 +8,7 @@ public class Sprite_change : MonoBehaviour
     public int Identity; //붕어빵의 개체값
     private SpriteRenderer SR;
     public bool list_character;
+    private int MAX_Health = 1;
     public float Speed = 1; //적에게 다가갈때 이동속도
     public int health = 1; //체력
     public int attack = 1; //공격력
@@ -41,6 +42,7 @@ public class Sprite_change : MonoBehaviour
         Speed = (int)data[Identity]["DEX"];
         attack= (int)data[Identity]["ATK"];
         attack_cool = (int)data[Identity]["AGI"];
+        MAX_Health = (int)data[Identity]["CON"];
         health = (int)data[Identity]["CON"];
         if ((int)data[Identity]["Multiple"] == 1)
             multiple = true;
@@ -70,7 +72,10 @@ public class Sprite_change : MonoBehaviour
             if (Data_base.Taiyaki[Identity] > 1 && Identity != 0)
                 Data_base.Taiyaki[Identity]--;
             else if (Data_base.Taiyaki[Identity] <= 1 && Identity != 0)
+            {
+                Data_base.Taiyaki[Identity] = 0;
                 Data_base.Battle_Member[Member_Slot] = -1;
+            }
 
             Camera.main.GetComponent<Repaint>().list.Remove(Camera.main.GetComponent<Repaint>().list.Find(x => x.gameObject == gameObject));
             Destroy(gameObject);
@@ -80,6 +85,7 @@ public class Sprite_change : MonoBehaviour
     public void damege(int atk)
     {
         health -= atk;
+        transform.GetChild(2).GetComponent<Renderer>().material.SetFloat("_ClippingRight_Value_1", ((float)health / (float)MAX_Health));
         if (health <= 0)
             Destroy();
     }
