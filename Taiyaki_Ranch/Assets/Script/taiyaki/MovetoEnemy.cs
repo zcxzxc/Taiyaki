@@ -66,9 +66,17 @@ public class MovetoEnemy : MonoBehaviour
         {
             search_shortest_enemy();
             if (transform.parent.gameObject.tag == "enemy" && Db.list.Count > 0)
+            {
+                if (Db.list[index].transform.position.x < transform.parent.position.x)
+                    transform.parent.localEulerAngles = new Vector3(transform.eulerAngles.x, 180, gameObject.transform.rotation.z);
                 transform.parent.position = Vector3.MoveTowards(transform.parent.position, Db.list[index].transform.position, Sc.Speed * 0.05f);
+            }
             if (transform.parent.gameObject.tag == "player" && Ed.list.Count > 0)
+            {
+                if(Ed.list[index].transform.position.x < transform.parent.position.x)
+                    transform.parent.localEulerAngles = new Vector3(transform.eulerAngles.x, 180, gameObject.transform.rotation.z);
                 transform.parent.position = Vector3.MoveTowards(transform.parent.position, Ed.list[index].transform.position, Sc.Speed * 0.05f);
+            }
         }
     }
     IEnumerator cool_down()

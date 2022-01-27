@@ -46,7 +46,25 @@ public class Attack : MonoBehaviour
         if (gameObject.layer == target.layer || target == null || transform.tag == target.tag)
             return;
         target.transform.GetComponent<Sprite_change>().damege(Sc.attack);
-        Instantiate(effect, target.transform.position, Quaternion.identity);
+        GameObject Obj = Instantiate(effect, target.transform.position, Quaternion.identity);
+        Obj.GetComponent<Effect>().Effect_Start(0);
+
+        Vector3 dir = target.transform.position - transform.parent.position;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        switch (Sc.Identity)
+        {
+            case 0:
+                Obj = Instantiate(effect, transform.parent.position, Quaternion.identity);
+                Obj.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                Obj.GetComponent<Effect>().Effect_Start(1);
+                break;
+            case 4:
+                Obj = Instantiate(effect, transform.parent.position, Quaternion.identity);
+                Obj.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                Obj.GetComponent<Effect>().Effect_Start(2);
+                break;
+        }
+        Obj = null;
     }
 
 
