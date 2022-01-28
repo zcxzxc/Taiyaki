@@ -8,6 +8,6 @@ public class Member_Button : MonoBehaviour
     public int Slot;
     public void Slot_Change_Button()
     {
-        transform.parent.parent.GetChild(4).GetComponent<Choice_and_Change>().Choice_Member_Slot(Slot);
+            transform.parent.parent.GetChild(4).GetComponent<Choice_and_Change>().Choice_Member_Slot(Slot);
     }
 }

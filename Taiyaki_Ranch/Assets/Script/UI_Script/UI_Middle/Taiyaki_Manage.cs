@@ -11,7 +11,7 @@ public class Taiyaki_Manage : MonoBehaviour
     public GameObject Taiyaki;
     public void Inven_Render()
     {
-        for(int i=0;i<28;i++)
+        for(int i=0;i<15;i++)
         {
            
             if(Data_base.Taiyaki[i] > 0)
@@ -33,13 +33,20 @@ public class Taiyaki_Manage : MonoBehaviour
     {
         int Slot = transform.parent.GetChild(4).GetComponent<Choice_and_Change>().Choice_Slot;
         int Identity = EventSystem.current.currentSelectedGameObject.GetComponent<Taiyaki_Inven>().Identity;
+        List<Dictionary<string, object>> data = CSVReader.Read("taiyaki_list");
+        transform.parent.GetChild(5).GetChild(0).GetComponent<TextMeshProUGUI>().text = data[Identity]["Name"].ToString();
+        transform.parent.GetChild(5).GetChild(1).GetComponent<TextMeshProUGUI>().text = data[Identity]["Content"].ToString();
         if (Slot != -1)
         {
             if(Identity != 0)
             for(int i=0;i<4;i++)
             {
                 if (Data_base.Battle_Member[i] == Identity && i != Slot)
-                    return;
+                    {
+                        transform.parent.GetChild(5).GetChild(0).GetComponent<TextMeshProUGUI>().text = "불가능!";
+                        transform.parent.GetChild(5).GetChild(1).GetComponent<TextMeshProUGUI>().text = "똑같은 붕어빵은\n 넣을 수 없다고!";
+                        return;
+                    }
             }
 
             Data_base.Battle_Member[Slot] = Identity;

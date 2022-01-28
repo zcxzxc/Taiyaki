@@ -15,4 +15,8 @@ public class Choice_and_Change : MonoBehaviour
         else
             gameObject.transform.position = new Vector3(1500, 1500, 0);
     }
+    public void Reset_Slot()
+    {
+        Choice_Member_Slot(-1);
+    }
 }
